@@ -5979,7 +5979,7 @@ __metadata:
     eslint-plugin-jsx-a11y: ^6.6.0
     eslint-plugin-react: ^7.30.1
     eslint-plugin-react-hooks: ^4.6.0
-    isomorphic-dompurify: ^2.7.0
+    isomorphic-dompurify: ^2.10.0
     json-loader: ^0.5.7
     marked: ^12.0.1
     prettier: ^2.7.1
@@ -6086,10 +6086,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "dompurify@npm:3.1.0"
-  checksum: 06fc76607cd076e394b2ea5479ab6f0407b8fedb6877ae95e94207b878365e5e1cd914055dacce152a5f419818afb8d4cd284b780246cf35363f0747c179a0ba
+"dompurify@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "dompurify@npm:3.1.6"
+  checksum: cc4fc4ccd9261fbceb2a1627a985c70af231274a26ddd3f643fd0616a0a44099bd9e4480940ce3655612063be4a1fe9f5e9309967526f8c0a99f931602323866
   languageName: node
   linkType: hard
 
@@ -7295,7 +7295,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -7948,7 +7948,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"http-proxy-agent@npm:^7.0.0":
+"http-proxy-agent@npm:^7.0.0, http-proxy-agent@npm:^7.0.2":
   version: 7.0.2
   resolution: "http-proxy-agent@npm:7.0.2"
   dependencies:
@@ -7994,6 +7994,16 @@ __metadata:
     agent-base: ^7.0.2
     debug: 4
   checksum: daaab857a967a2519ddc724f91edbbd388d766ff141b9025b629f92b9408fc83cee8a27e11a907aede392938e9c398e240d643e178408a59e4073539cde8cfe9
+  languageName: node
+  linkType: hard
+
+"https-proxy-agent@npm:^7.0.5":
+  version: 7.0.5
+  resolution: "https-proxy-agent@npm:7.0.5"
+  dependencies:
+    agent-base: ^7.0.2
+    debug: 4
+  checksum: 2e1a28960f13b041a50702ee74f240add8e75146a5c37fc98f1960f0496710f6918b3a9fe1e5aba41e50f58e6df48d107edd9c405c5f0d73ac260dabf2210857
   languageName: node
   linkType: hard
 
@@ -8680,14 +8690,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isomorphic-dompurify@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "isomorphic-dompurify@npm:2.7.0"
+"isomorphic-dompurify@npm:^2.10.0":
+  version: 2.15.0
+  resolution: "isomorphic-dompurify@npm:2.15.0"
   dependencies:
     "@types/dompurify": ^3.0.5
-    dompurify: ^3.1.0
-    jsdom: ^24.0.0
-  checksum: 95a16e89e9bac48445d025003506591cea7033b5a8668091699a528beeb021c2fc4397092b59f6dfeeada1ffc7b00ce51c19682e77ee00714a3d7cd14f195294
+    dompurify: ^3.1.6
+    jsdom: ^25.0.0
+  checksum: a8cbf6e7680be9d8c795d4fca427d673c6fc78bacec736331897795566a6bde9d61f9cbee0d22f89cab0be0ba4f62a8d61484e0639a115e4aed0501e80c583f9
   languageName: node
   linkType: hard
 
@@ -8820,37 +8830,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsdom@npm:^24.0.0":
-  version: 24.0.0
-  resolution: "jsdom@npm:24.0.0"
+"jsdom@npm:^25.0.0":
+  version: 25.0.0
+  resolution: "jsdom@npm:25.0.0"
   dependencies:
     cssstyle: ^4.0.1
     data-urls: ^5.0.0
     decimal.js: ^10.4.3
     form-data: ^4.0.0
     html-encoding-sniffer: ^4.0.0
-    http-proxy-agent: ^7.0.0
-    https-proxy-agent: ^7.0.2
+    http-proxy-agent: ^7.0.2
+    https-proxy-agent: ^7.0.5
     is-potential-custom-element-name: ^1.0.1
-    nwsapi: ^2.2.7
+    nwsapi: ^2.2.12
     parse5: ^7.1.2
-    rrweb-cssom: ^0.6.0
+    rrweb-cssom: ^0.7.1
     saxes: ^6.0.0
     symbol-tree: ^3.2.4
-    tough-cookie: ^4.1.3
+    tough-cookie: ^4.1.4
     w3c-xmlserializer: ^5.0.0
     webidl-conversions: ^7.0.0
     whatwg-encoding: ^3.1.1
     whatwg-mimetype: ^4.0.0
     whatwg-url: ^14.0.0
-    ws: ^8.16.0
+    ws: ^8.18.0
     xml-name-validator: ^5.0.0
   peerDependencies:
     canvas: ^2.11.2
   peerDependenciesMeta:
     canvas:
       optional: true
-  checksum: 180cf672c1f5e4375fd831b6990c453b4c22b540619abe7a0a3ed0d18eca1171dea9f25739bc06dfea26d1c0d71c7ac26e62fc9a2d9b1657003fc8fd1bf6f9f4
+  checksum: aa7dc92333f7694c3ddd61685b640f743a61e5e638fcc9c24156e63dc432ab36dbe90137d608c82a3f84d9e05f70c903a38f9e34d6cca1a74469fad4c93f76c2
   languageName: node
   linkType: hard
 
@@ -9894,10 +9904,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nwsapi@npm:^2.2.7":
-  version: 2.2.7
-  resolution: "nwsapi@npm:2.2.7"
-  checksum: cab25f7983acec7e23490fec3ef7be608041b460504229770e3bfcf9977c41d6fe58f518994d3bd9aa3a101f501089a3d4a63536f4ff8ae4b8c4ca23bdbfda4e
+"nwsapi@npm:^2.2.12":
+  version: 2.2.12
+  resolution: "nwsapi@npm:2.2.12"
+  checksum: 4dbce7ecbcf336eef1edcbb5161cbceea95863e63a16d9bcec8e81cbb260bdab3d07e6c7b58354d465dc803eef6d0ea4fb20220a80fa148ae65f18d56df81799
   languageName: node
   linkType: hard
 
@@ -11633,7 +11643,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.1.6#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.4#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>":
   version: 1.22.8
-  resolution: "resolve@patch:resolve@npm%3A1.22.8#~builtin<compat/resolve>::version=1.22.8&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.8#~builtin<compat/resolve>::version=1.22.8&hash=07638b"
   dependencies:
     is-core-module: ^2.13.0
     path-parse: ^1.0.7
@@ -11646,7 +11656,7 @@ __metadata:
 
 "resolve@patch:resolve@^2.0.0-next.5#~builtin<compat/resolve>":
   version: 2.0.0-next.5
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.5#~builtin<compat/resolve>::version=2.0.0-next.5&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.5#~builtin<compat/resolve>::version=2.0.0-next.5&hash=07638b"
   dependencies:
     is-core-module: ^2.13.0
     path-parse: ^1.0.7
@@ -11763,6 +11773,13 @@ __metadata:
   version: 0.6.0
   resolution: "rrweb-cssom@npm:0.6.0"
   checksum: 182312f6e4f41d18230ccc34f14263bc8e8a6b9d30ee3ec0d2d8e643c6f27964cd7a8d638d4a00e988d93e8dc55369f4ab5a473ccfeff7a8bab95b36d2b5499c
+  languageName: node
+  linkType: hard
+
+"rrweb-cssom@npm:^0.7.1":
+  version: 0.7.1
+  resolution: "rrweb-cssom@npm:0.7.1"
+  checksum: 62e410ddbaaba6abc196c3bbfa8de4952e0a134d9f2b454ee293039bf9931322d806e14d52ed122a5c2bd332a868b9da2e99358fb6232c33758b5ede86d992c8
   languageName: node
   linkType: hard
 
@@ -12807,15 +12824,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tough-cookie@npm:^4.1.3":
-  version: 4.1.3
-  resolution: "tough-cookie@npm:4.1.3"
+"tough-cookie@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "tough-cookie@npm:4.1.4"
   dependencies:
     psl: ^1.1.33
     punycode: ^2.1.1
     universalify: ^0.2.0
     url-parse: ^1.5.3
-  checksum: c9226afff36492a52118432611af083d1d8493a53ff41ec4ea48e5b583aec744b989e4280bcf476c910ec1525a89a4a0f1cae81c08b18fb2ec3a9b3a72b91dcc
+  checksum: 5815059f014c31179a303c673f753f7899a6fce94ac93712c88ea5f3c26e0c042b5f0c7a599a00f8e0feeca4615dba75c3dffc54f3c1a489978aa8205e09307c
   languageName: node
   linkType: hard
 
@@ -13033,7 +13050,7 @@ __metadata:
 
 "typescript@patch:typescript@<5.2.0#~builtin<compat/typescript>":
   version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=77c9e2"
+  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
@@ -13043,7 +13060,7 @@ __metadata:
 
 "typescript@patch:typescript@^5.1.3#~builtin<compat/typescript>":
   version: 5.3.3
-  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=77c9e2"
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#~builtin<compat/typescript>::version=5.3.3&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
@@ -13966,7 +13983,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:^8.13.0, ws@npm:^8.14.2, ws@npm:^8.16.0":
+"ws@npm:^8.13.0, ws@npm:^8.14.2":
   version: 8.16.0
   resolution: "ws@npm:8.16.0"
   peerDependencies:
@@ -13978,6 +13995,21 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: feb3eecd2bae82fa8a8beef800290ce437d8b8063bdc69712725f21aef77c49cb2ff45c6e5e7fce622248f9c7abaee506bae0a9064067ffd6935460c7357321b
+  languageName: node
+  linkType: hard
+
+"ws@npm:^8.18.0":
+  version: 8.18.0
+  resolution: "ws@npm:8.18.0"
+  peerDependencies:
+    bufferutil: ^4.0.1
+    utf-8-validate: ">=5.0.2"
+  peerDependenciesMeta:
+    bufferutil:
+      optional: true
+    utf-8-validate:
+      optional: true
+  checksum: 91d4d35bc99ff6df483bdf029b9ea4bfd7af1f16fc91231a96777a63d263e1eabf486e13a2353970efc534f9faa43bdbf9ee76525af22f4752cbc5ebda333975
   languageName: node
   linkType: hard
 
